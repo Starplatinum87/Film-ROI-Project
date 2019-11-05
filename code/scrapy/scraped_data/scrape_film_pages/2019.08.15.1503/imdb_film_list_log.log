@@ -1,0 +1,1191 @@
+INFO:scrapy.utils.log:Scrapy 1.5.1 started (bot: film_roi)
+INFO:scrapy.utils.log:Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.6.7 |Anaconda, Inc.| (default, Oct 23 2018, 14:01:38) - [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.4.2, Platform Darwin-18.6.0-x86_64-i386-64bit
+INFO:scrapy.crawler:Overridden settings: {'AUTOTHROTTLE_ENABLED': True, 'BOT_NAME': 'film_roi', 'FEED_FORMAT': 'csv', 'FEED_URI': 'film_roi_list.csv', 'NEWSPIDER_MODULE': 'film_roi.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['film_roi.spiders']}
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+DEBUG:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (302) to <GET https://pro.imdb.com/signup/index.html?u=https%3A%2F%2Fpro.imdb.com%2Ferrors%2F404> from <GET https://pro.imdb.com/robots.txt>
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://pro.imdb.com/signup/index.html?u=https%3A%2F%2Fpro.imdb.com%2Ferrors%2F404> (referer: None)
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (302) to <GET https://pro.imdb.com/signup/index.html?u=https%3A%2F%2Fpro.imdb.com%2F> from <GET https://pro.imdb.com/>
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://pro.imdb.com/signup/index.html?u=https%3A%2F%2Fpro.imdb.com%2F> (referer: None)
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:51161
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session HTTP/1.1" 200 689
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/url {"url": "https://pro.imdb.com/login/imdb?u=%2F"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"ap_email\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element/7693c43a-8667-472d-998b-189d885d1b55/value {"text": "starplatinum87@gmail.com", "value": ["s", "t", "a", "r", "p", "l", "a", "t", "i", "n", "u", "m", "8", "7", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m"], "id": "7693c43a-8667-472d-998b-189d885d1b55"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element/7693c43a-8667-472d-998b-189d885d1b55/value HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"ap_password\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element/9db7fec3-23c1-47f2-9b83-ef6550f090ef/value {"text": "ensoul.socrates.dewdrop.catalpa", "value": ["e", "n", "s", "o", "u", "l", ".", "s", "o", "c", "r", "a", "t", "e", "s", ".", "d", "e", "w", "d", "r", "o", "p", ".", "c", "a", "t", "a", "l", "p", "a"], "id": "9db7fec3-23c1-47f2-9b83-ef6550f090ef"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element/9db7fec3-23c1-47f2-9b83-ef6550f090ef/value HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"signInSubmit\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element/59e0ed86-a6c8-4f09-9e54-fd6fade17132/click {"id": "59e0ed86-a6c8-4f09-9e54-fd6fade17132"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element/59e0ed86-a6c8-4f09-9e54-fd6fade17132/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"meter_type_selections\"]/li[2]/a"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element/32ccc721-f120-4772-b94e-fa1164eb0032/click {"id": "32ccc721-f120-4772-b94e-fa1164eb0032"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element/32ccc721-f120-4772-b94e-fa1164eb0032/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"meter_headshots\"]/div[2]/div[2]/a"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element/24e9792c-abd8-44d4-b0b5-a34f9009912d/click {"id": "24e9792c-abd8-44d4-b0b5-a34f9009912d"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element/24e9792c-abd8-44d4-b0b5-a34f9009912d/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"type_movie\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element/aa1fbd43-e4f6-4e38-a756-2d3dbddbee0c/click {"id": "aa1fbd43-e4f6-4e38-a756-2d3dbddbee0c"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element/aa1fbd43-e4f6-4e38-a756-2d3dbddbee0c/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"status_RELEASED\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element/c8243e45-fc7f-4f91-9499-be80c9eb7226/click {"id": "c8243e45-fc7f-4f91-9499-be80c9eb7226"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element/c8243e45-fc7f-4f91-9499-be80c9eb7226/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"year_yearMin\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element/0f6b4798-ddb7-467c-a21d-2216dfb839c5/value {"text": "2010", "value": ["2", "0", "1", "0"], "id": "0f6b4798-ddb7-467c-a21d-2216dfb839c5"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element/0f6b4798-ddb7-467c-a21d-2216dfb839c5/value HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"year_yearMax\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element/14fc2615-4522-42aa-9b01-21adfd4cd896/value {"text": "2018", "value": ["2", "0", "1", "8"], "id": "14fc2615-4522-42aa-9b01-21adfd4cd896"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element/14fc2615-4522-42aa-9b01-21adfd4cd896/value HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"budget_budgetMin\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element/13f4811f-bb61-4539-8f25-97ed678e3175/value {"text": "0.1", "value": ["0", ".", "1"], "id": "13f4811f-bb61-4539-8f25-97ed678e3175"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element/13f4811f-bb61-4539-8f25-97ed678e3175/value HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"gross_grossMin\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element/03a39d91-8140-46a7-9a2d-0c9d8fd38f34/value {"text": "0.1", "value": ["0", ".", "1"], "id": "03a39d91-8140-46a7-9a2d-0c9d8fd38f34"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element/03a39d91-8140-46a7-9a2d-0c9d8fd38f34/value HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"country_US\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element/342c0153-ba79-4d8b-97fe-f67d072d522d/click {"id": "342c0153-ba79-4d8b-97fe-f67d072d522d"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element/342c0153-ba79-4d8b-97fe-f67d072d522d/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"gross\"]/ul/li[11]/span/a"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element/441971fc-3b90-41b5-a3c9-1720e3ccdd31/click {"id": "441971fc-3b90-41b5-a3c9-1720e3ccdd31"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element/441971fc-3b90-41b5-a3c9-1720e3ccdd31/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/url {"url": "https://pro.imdb.com/inproduction?ref_=hm_reel_mm_all#type=movie&status=RELEASED&country=US&year=2010-2018&budget=0.1-&gross=0.1-&sort=ranking"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "GET /session/fa1f9ab68052761224c3b8d60c1eae31/source HTTP/1.1" 200 211865
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[50]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1943
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[50]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1943
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[50]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 1 Getting 50th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[75]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1943
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[75]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1943
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[75]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 2 Getting 75th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[100]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[100]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[100]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[100]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 3 Getting 100th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[125]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[125]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[125]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[125]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 4 Getting 125th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[150]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[150]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[150]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[150]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 5 Getting 150th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[175]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[175]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[175]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[175]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 6 Getting 175th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[200]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[200]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[200]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[200]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 7 Getting 200th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[225]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[225]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[225]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[225]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 8 Getting 225th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[250]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[250]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[250]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[250]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 9 Getting 250th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[275]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[275]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[275]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 10 Getting 275th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[300]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[300]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[300]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[300]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 11 Getting 300th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[325]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[325]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[325]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[325]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 12 Getting 325th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[350]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[350]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[350]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[350]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 13 Getting 350th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[375]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[375]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[375]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[375]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 14 Getting 375th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[400]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[400]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[400]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[400]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 15 Getting 400th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[425]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[425]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[425]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[425]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 16 Getting 425th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[450]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[450]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[450]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[450]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 17 Getting 450th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[475]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[475]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[475]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[475]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 18 Getting 475th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[500]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[500]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[500]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 19 Getting 500th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[525]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[525]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[525]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[525]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 20 Getting 525th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[550]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[550]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[550]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 21 Getting 550th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 22 Getting 575th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[600]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[600]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[600]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[600]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 23 Getting 600th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[625]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[625]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[625]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[625]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 24 Getting 625th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[650]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[650]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[650]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 25 Getting 650th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[675]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[675]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[675]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[675]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 26 Getting 675th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[700]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[700]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[700]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 27 Getting 700th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[725]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[725]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[725]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[725]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 28 Getting 725th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[750]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[750]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[750]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 29 Getting 750th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[775]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[775]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[775]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[775]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 30 Getting 775th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[800]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[800]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[800]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[800]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 31 Getting 800th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[825]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[825]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[825]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[825]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 32 Getting 825th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[850]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[850]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[850]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[850]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 33 Getting 850th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[875]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[875]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[875]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 34 Getting 875th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[900]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[900]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[900]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 35 Getting 900th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[925]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[925]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[925]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[925]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 36 Getting 925th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[950]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[950]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[950]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 37 Getting 950th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[975]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[975]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1944
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[975]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 38 Getting 975th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1000]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1000]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1000]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 39 Getting 1000th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1025]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1025]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1025]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1025]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 40 Getting 1025th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1050]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1050]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1050]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1050]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 41 Getting 1050th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1075]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1075]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1075]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1075]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 42 Getting 1075th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1100]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1100]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1100]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1100]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 43 Getting 1100th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1125]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1125]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1125]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1125]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 44 Getting 1125th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1150]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1150]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1150]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 45 Getting 1150th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1175]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1175]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1175]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 46 Getting 1175th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1200]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1200]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1200]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 47 Getting 1200th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1225]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1225]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1225]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1225]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 48 Getting 1225th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1250]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1250]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1250]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 49 Getting 1250th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1275]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1275]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1275]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1275]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 50 Getting 1275th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1300]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1300]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1300]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1300]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 51 Getting 1300th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1325]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1325]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1325]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 52 Getting 1325th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1350]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1350]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1350]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1350]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 53 Getting 1350th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1375]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1375]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1375]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 54 Getting 1375th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1400]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1400]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1400]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 55 Getting 1400th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1425]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1425]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1425]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 56 Getting 1425th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1450]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1450]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1450]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1450]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 57 Getting 1450th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1475]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1475]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1475]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 58 Getting 1475th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1500]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1500]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1500]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 59 Getting 1500th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1525]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1525]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1525]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 60 Getting 1525th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1550]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1550]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1550]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Scroll 1: 61 Getting 1550th result.
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight);", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/element {"using": "xpath", "value": "//*[@id=\"results\"]/ul/li[1575]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "POST /session/fa1f9ab68052761224c3b8d60c1eae31/element HTTP/1.1" 404 1945
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Message: 
+
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:51161/session/fa1f9ab68052761224c3b8d60c1eae31/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51161 "GET /session/fa1f9ab68052761224c3b8d60c1eae31/source HTTP/1.1" 200 4600866
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+ERROR:scrapy.core.scraper:Spider error processing <GET https://pro.imdb.com/signup/index.html?u=https%3A%2F%2Fpro.imdb.com%2F> (referer: None)
+Traceback (most recent call last):
+  File "/anaconda3/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/starplatinum87/Google Drive/DATA_SCIENCE/Projects/02_Film_ROI/film_roi/film_roi/spiders/imdbpro_film_list.py", line 150, in parse
+    pickle_out = open(film_list_names[count] + '.pickle', 'wb')
+IndexError: list index out of range
+INFO:scrapy.extensions.logstats:Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 1454,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 24688,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 2,
+ 'downloader/response_status_count/302': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 8, 15, 21, 55, 29, 475689),
+ 'log_count/DEBUG': 1115,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 8,
+ 'memusage/max': 168534016,
+ 'memusage/startup': 94191616,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'spider_exceptions/IndexError': 1,
+ 'start_time': datetime.datetime(2019, 8, 15, 21, 52, 44, 736844)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 1.5.1 started (bot: film_roi)
+INFO:scrapy.utils.log:Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.6.7 |Anaconda, Inc.| (default, Oct 23 2018, 14:01:38) - [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.4.2, Platform Darwin-18.6.0-x86_64-i386-64bit
